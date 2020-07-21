@@ -92,6 +92,7 @@ async function createCourse(){
         const result = await course.save();
         console.log(result);
     } catch(err){
+        //iterating part
         var a=0;
         for(i in err.errors){
             a+=1;
